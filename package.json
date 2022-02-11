@@ -7,5 +7,20 @@
   },
   "scripts": {
     "start": "nodemon"
-  }
+  },
+  "name": "maarseveenbot",
+  "version": "1.0.0",
+  "main": "Index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/githubjulian900/MaarseveenBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/githubjulian900/MaarseveenBot/issues"
+  },
+  "homepage": "https://github.com/githubjulian900/MaarseveenBot#readme",
+  "description": ""
 }

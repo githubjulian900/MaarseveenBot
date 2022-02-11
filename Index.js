@@ -90,4 +90,4 @@ client.on("messageCreate", async message => {
 		await message.reply("error")
 	}
 })
-client.login(config.token)
+client.login(process.env.token)

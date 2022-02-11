@@ -37,7 +37,6 @@ var embed = new disocrd.MessageEmbed()
 **Gekickt door:** ${message.author}
 **Reden:** ${reden}
 `)
-.setFooter(message.member.displayName)
 .setTimestamp()
 
 message.channel.send({ embeds: [embedpromt] }).then(async msg => {

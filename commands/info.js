@@ -16,9 +16,10 @@ const embed = new MessageEmbed()
 .setDescription("ServerInformatie")
 .setFields(
 	{name: "ServerNaam", value: guild.name},
-	{name: "ServerMemberCount", value: guild.membercount},
-	{name: "ServerID", value: guild.id},
-)
+	{name: "ServerMemberCount", value: guild.membercount}
+	)
+
+
 .setThumbnail(guild.iconURL())
 .setColor("RANDOM")
 

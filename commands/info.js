@@ -10,14 +10,17 @@ const client = new Client({
 
 
 module.exports.run = async (bot, message, args) => {
-
+const guild = message.guild
 const embed = new MessageEmbed()
 .setTitle("Info")
 .setDescription("ServerInformatie")
 .setFields(
-	{name: "ServerNaam", value: message.member.guild.name},
-	{name: "ServerMemberCount", value: message.member.guild.membercount}
+	{name: "ServerNaam", value: guild.name},
+	{name: "ServerMemberCount", value: guild.membercount},
+	{name: "ServerID", value: guild.id},
 )
+.setThumbnail(message.guild.iconURL())
+.setColor("RANDOM")
 message.channel.send({embeds: [embed]})
     
 }   

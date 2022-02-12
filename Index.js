@@ -10,6 +10,10 @@ const client = new Client({
 })
 
 
+module.exports.Client = Client
+require('./mongo')
+
+
 client.commands = new Collection();
 
 

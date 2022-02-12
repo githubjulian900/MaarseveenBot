@@ -28,7 +28,7 @@ message.reply({embeds: [embed]})
 
 
 module.exports.help = {
-name: "serverInfo",
+name: "serverinfo",
 Category: "Info",
 desciption: "info command" 
 }   

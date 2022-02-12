@@ -21,7 +21,6 @@ const embed = new MessageEmbed()
 
 .setThumbnail(guild.iconURL())
 .setColor("RANDOM")
-.setFooter(guild.iconURL())
 
 message.channel.send({embeds: [embed]})
     

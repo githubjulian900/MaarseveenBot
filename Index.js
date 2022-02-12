@@ -59,7 +59,7 @@ client.once("ready", () => {
 	console.log(client.user.username, 'is online')
 	client.user.setActivity("To Maarseveen", { type: "WATCHING" })
 
-	const logchannel = require("940231367986401280")
+	const logchannel = ("940231367986401280")
 
 	logchannel.send("Online")
 })

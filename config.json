@@ -1,3 +1,4 @@
 {
-    "prefix": ")"
+    "prefix": ")",
+    "dbtoken": "mongodb+srv://Julian:Julian123@maarseveenbot.dce4a.mongodb.net/Datae?retryWrites=true&w=majority"
 }

@@ -3,8 +3,9 @@
     "@discordjs/rest": "^0.3.0",
     "discord-api-types": "^0.26.1",
     "discord.js": "^13.6.0",
-    "nodemon": "^2.0.15",
-    "mongopath": "mongodb+srv://Julian:Julian123@maarseveenbot.dce4a.mongodb.net/Data?retryWrites=true&w=majority"
+    "mongoose": "^6.2.1",
+    "mongopath": "mongodb+srv://Julian:Julian123@maarseveenbot.dce4a.mongodb.net/Data?retryWrites=true&w=majority",
+    "nodemon": "^2.0.15"
   },
   "scripts": {
     "start": "nodemon"
@@ -12,7 +13,6 @@
   "name": "maarseveenbot",
   "version": "1.0.0",
   "main": "Index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/githubjulian900/MaarseveenBot.git"

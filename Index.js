@@ -5,13 +5,13 @@ const fs = require("fs");
 
 const client = new Client({
 	intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES,
-	Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_MESSAGES_REACTIONS]
+	Intents.FLAGS.GUILD_MEMBERS]
 	
 })
 
 
 module.exports.Client = Client
-require('./mongo')
+require('./dblogin')
 
 
 client.commands = new Collection();

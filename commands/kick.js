@@ -7,7 +7,7 @@ if(!message.author.hasPermissions("KICK_MEMBERS")) return message.channel.send("
 var player = message.mentions.first()
 var reden = args[2]
 if(message.author.hasPermissions("KICK_MEMBERS")) {
-    player.Kick({reason: reden})
+player.Kick({ reason: reden})
 }
 }
 

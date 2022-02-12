@@ -98,9 +98,3 @@ client.on("messageCreate", async message => {
 })
 client.login(process.env.token)
 
-
-
-if(!process.env.token) {
-	client.login(configt.token )
-}
-

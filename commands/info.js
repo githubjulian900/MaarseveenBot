@@ -22,7 +22,7 @@ const embed = new MessageEmbed()
 .setThumbnail(guild.iconURL())
 .setColor("RANDOM")
 
-message.channel.send({embeds: [embed]})
+message.reply({embeds: [embed]})
     
 }   
 

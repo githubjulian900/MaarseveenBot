@@ -19,8 +19,9 @@ const embed = new MessageEmbed()
 	{name: "ServerMemberCount", value: guild.membercount},
 	{name: "ServerID", value: guild.id},
 )
-.setThumbnail(message.guild.iconURL())
+.setThumbnail(guild.iconURL())
 .setColor("RANDOM")
+
 message.channel.send({embeds: [embed]})
     
 }   

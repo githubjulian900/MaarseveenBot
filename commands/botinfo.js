@@ -10,13 +10,13 @@ const client = new Client({
 
 
 module.exports.run = async (bot, message, args) => {
-const bot = client
+const bottie = client
 const embed = new MessageEmbed()
 .setTitle("Info")
 .setDescription("BotInformatie")
 .setFields(
-	{name: "Botnaam", value: bot.name},
-    {name: "Bot Owner", value: bot.Owner},
+	{name: "Botnaam", value: bottie.name},
+    {name: "Bot Owner", value: bottie.Owner},
 	)
 
 

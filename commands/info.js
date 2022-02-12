@@ -14,7 +14,9 @@ module.exports.run = async (bot, message, args) => {
 const embed = new MessageEmbed()
 .setTitle("Info")
 .setDescription("test")
-
+.setFields(
+	{name: "ServerNaam", value: message.member.guild.name}
+)
 message.channel.send({embeds: [embed]})
     
 }   

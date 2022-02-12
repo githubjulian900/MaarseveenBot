@@ -15,7 +15,8 @@ const embed = new MessageEmbed()
 .setTitle("Info")
 .setDescription("ServerInformatie")
 .setFields(
-	{name: "ServerNaam", value: guild.name}
+	{name: "ServerNaam", value: guild.name},
+	{name: "ServerOwner", value: guild.owner}
 	)
 
 

@@ -10,12 +10,13 @@ const client = new Client({
 
 
 module.exports.run = async (bot, message, args) => {
-const guild = message.guild
+const bot = client
 const embed = new MessageEmbed()
 .setTitle("Info")
-.setDescription("ServerInformatie")
+.setDescription("BotInformatie")
 .setFields(
-	{name: "ServerNaam", value: guild.name}
+	{name: "Botnaam", value: bot.name},
+    {name: "Bot Owner", value: bot.Owner},
 	)
 
 
@@ -28,7 +29,7 @@ message.reply({embeds: [embed]})
 
 
 module.exports.help = {
-name: "info",
+name: "botinfo",
 Category: "Info",
 desciption: "info command" 
 }   

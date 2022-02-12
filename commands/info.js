@@ -16,7 +16,7 @@ const embed = new MessageEmbed()
 .setDescription("ServerInformatie")
 .setFields(
 	{name: "ServerNaam", value: message.member.guild.name},
-	{name: "ServerMemberCount", value: messae.member.guild.membercount}
+	{name: "ServerMemberCount", value: message.member.guild.membercount}
 )
 message.channel.send({embeds: [embed]})
     

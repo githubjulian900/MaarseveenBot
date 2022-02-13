@@ -14,7 +14,7 @@ const { guild } = message
 console.log(guild)
 
 const {name, region, membercount, owner} = guild
-const icon = guild.iconURL
+const icon = message.guild.iconURL
 
 console.log(name, region, membercount)
 
@@ -22,9 +22,9 @@ const embed = new MessageEmbed()
 
 .setTitle(`Server info Voor ${name}`)
 .setThumbnail(icon)
-.addField("Regio", `${region}`)
-.addField("Members", `${membercount}`)
-.addField("Eigenaar", `${owner}`)
+.addField("Regio", `${message.guild.region}`)
+.addField("Members", `${message.guild.membercount}`)
+.addField("Eigenaar", `${message.guild.owner}`)
 
 message.channel.send({embeds: [embed]})
 }  

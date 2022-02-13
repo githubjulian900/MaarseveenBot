@@ -10,7 +10,7 @@ const client = new Client({
 
 
 module.exports.run = async (bot, message, args) => {
-const { guild } = message
+const { guild } = message.guild
 console.log(guild)
 
 const {name, region, membercount, owner} = guild
@@ -22,9 +22,9 @@ const embed = new MessageEmbed()
 
 .setTitle(`Server info Voor ${name}`)
 .setThumbnail(icon)
-.addField("Regio", `${message.guild.region}`)
-.addField("Members", `${message.guild.membercount}`)
-.addField("Eigenaar", `${message.guild.owner}`)
+.addField("Regio", `${region}`)
+.addField("Members", `${membercount}`)
+.addField("Eigenaar", `${owner}`)
 
 message.channel.send({embeds: [embed]})
 }  

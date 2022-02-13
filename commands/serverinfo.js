@@ -22,25 +22,13 @@ const embed = new MessageEmbed()
 
 .setTitle(`Server info Voor ${name}`)
 .setThumbnail(`${icon}`)
-.addFields(
-{
-	name: 'Regio',
-	value: region,
-	inline: true
-},
-{
-	name: 'Members',
-	value: membercount,
-	inline: true
-},
-{
-	name: 'Eigenaar',
-	value: owner,
-	inline: true
-}
-)
+.addField("Regio", `${region}`)
+.addField("Members", `${membercount}`)
+.addField("Eigenaar", `${owner}`)
+
 message.channel.send({embeds: [embed]})
 }  
+
 
 
 module.exports.help = {

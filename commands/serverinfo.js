@@ -35,8 +35,8 @@ const embed = new MessageEmbed()
 		value: owner,
 	}
 )
-}   
-Message.channel.send({embeds: [embed]})
+}  
+channel.send({embeds: [embed]})
 
 module.exports.help = {
 name: "serverinfo",

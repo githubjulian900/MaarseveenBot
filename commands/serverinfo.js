@@ -22,7 +22,7 @@ const embed = new MessageEmbed()
 
 .setTitle(`Server info Voor ${name}`)
 .setThumbnail(icon)
-.addField("Guild", `${guild}`)
+.addField("test", `${region}`)
 
 
 message.channel.send({embeds: [embed]})

@@ -18,25 +18,24 @@ const icon = guild.iconURL
 
 console.log(name, region, membercount)
 
-const embed = new MessageEmbed()
-.setTitle(`Server info Voor ${name}`)
-.setThumbnail(icon)
-.addFields(
-	{
-		name: 'Regio',
-		value: region,
-	},
-	{
-		name: 'Members',
-		value: membercount,
-	},
-	{
-		name: 'Eigenaar',
-		value: owner,
-	}
-)
-}  
-channel.send({embeds: [embed]})
+// const embed = new MessageEmbed()
+//.setTitle(`Server info Voor ${name}`)
+//.setThumbnail(icon)
+//.addFields(
+//	{
+//		name: 'Regio',
+//		value: region,
+//	},
+//	{
+//		name: 'Members',
+//		value: membercount,
+///	},
+//	{
+//		name: 'Eigenaar',
+//		value: owner,
+//	}
+//)
+// }  
 
 module.exports.help = {
 name: "serverinfo",

@@ -21,19 +21,19 @@ console.log(name, region, membercount)
 const embed = new MessageEmbed()
 
 .setTitle(`Server info Voor ${name}`)
-.setThumbnail(icon)
+.setThumbnail(`${icon}`)
 .addFields(
 	{
 		name: 'Regio',
-		value: region,
+		value: `${region}`,
 	},
 	{
 		name: 'Members',
-		value: membercount,
+		value: `${membercount}`,
 	},
 	{
 		name: 'Eigenaar',
-		value: owner,
+		value: `${owner}`,
 	}
 ) 
 

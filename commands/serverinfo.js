@@ -36,7 +36,7 @@ const embed = new MessageEmbed()
 	}
 )
 }   
-
+message.channel.send({embeds: [embed]})
 
 module.exports.help = {
 name: "serverinfo",

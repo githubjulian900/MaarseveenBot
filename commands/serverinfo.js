@@ -33,19 +33,7 @@ const embed = new MessageEmbed()
 	{
 		name: 'Eigenaar',
 		value: owner,
-	},
-	{
-		name: '',
-		value: '',
-	},
-	{
-		name: '',
-		value: '',
-	},
-	{
-		name: '',
-		value: '',
-	},
+	}
 )
 }   
 

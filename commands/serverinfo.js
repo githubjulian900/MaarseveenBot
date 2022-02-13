@@ -21,7 +21,7 @@ console.log(name, region, membercount)
 const embed = new MessageEmbed()
 
 .setTitle(`Server info Voor ${name}`)
-.setThumbnail(`${icon}`)
+.setThumbnail(icon)
 .addField("Regio", `${region}`)
 .addField("Members", `${membercount}`)
 .addField("Eigenaar", `${owner}`)

@@ -2,6 +2,7 @@ const config = require("../config.json")
 module.exports.run = async (bot, message, args) => {
 
          await message.reply (`mijn prefix is: ${config.prefix}`)
+         
 
 }
 

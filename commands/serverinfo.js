@@ -10,20 +10,15 @@ const client = new Client({
 
 
 module.exports.run = async (bot, message, args) => {
-const guild = message.guild
-const embed = new MessageEmbed()
-.setTitle("Info")
-.setDescription("ServerInformatie")
-.setFields(
-	{name: "ServerNaam", value: guild.name}
-	)
+const { guild } = message
+console.log(guild)
 
+const {name, region, membercount, owner} = guild
+const icon = guild.iconURL
 
-.setThumbnail(guild.iconURL())
-.setColor("RANDOM")
+console.log(name, region, membercount)
 
-message.reply({embeds: [embed]})
-    
+console.log(owner)
 }   
 
 

@@ -1,7 +1,9 @@
+
 module.exports.run = async (bot, message, args) => {
 
    
-        return message.reply("test")
+        return message.reply("HE")
+       
         
 }   
 

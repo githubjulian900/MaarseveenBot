@@ -25,15 +25,15 @@ const embed = new MessageEmbed()
 .addFields(
 	{
 		name: 'Regio',
-		value: `${region}`,
+		value: region,
 	},
 	{
 		name: 'Members',
-		value: `${membercount}`,
+		value: membercount,
 	},
 	{
 		name: 'Eigenaar',
-		value: `${owner}`,
+		value: owner,
 	}
 ) 
 

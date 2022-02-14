@@ -13,7 +13,10 @@ module.exports.run = async (bot, message, args) => {
 const { guild } = message.guild
 console.log(guild)
 
-const {name, region, membercount, owner} = guild
+const {name } = guild.name
+const { region}  guild.region
+const { owner}  guild.owner
+
 const icon = message.guild.iconURL
 
 console.log(name, region, membercount)

@@ -16,6 +16,7 @@ console.log(guild)
 const {name } = guild.name
 const { region}  guild.region
 const { owner}  guild.owner
+const { members } guild.memberCount
 
 const icon = message.guild.iconURL
 

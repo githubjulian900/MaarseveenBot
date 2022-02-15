@@ -15,9 +15,8 @@ const { guild } = message
 
 
 const { name, region, MemberCount, } = guild
-const icon = guild.iconURl()
 
-console.log(name, region, MemberCount, icon)
+console.log(name, region, MemberCount)
 
 }   
 

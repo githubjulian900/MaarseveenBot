@@ -18,6 +18,8 @@ const { name, region, MemberCount, } = guild
 
 console.log(name, region, MemberCount, guild)
 
+message.channel.send(message.author.tag, "We zijn bezig met deze commands graag niet uitvoeren onze logs spammen namelijk vol Gr, Julian!")
+
 }   
 
 

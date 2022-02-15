@@ -12,10 +12,10 @@ const client = new Client({
 module.exports.run = async (bot, message, args) => {
 const { guild } = message.guild
 console.log(guild)
-const name = message.guild.name
-const  owner = message.guild.owner
-const  region = message.message.guild.region
-const  membercount = message.guild.membercount
+const name = message.member.guild.name
+const  owner = message.member.guild.owner
+const  region = message.member.guild.region
+const  membercount = message.member.guild.membercount
 
 
 const icon = message.guild.iconURL

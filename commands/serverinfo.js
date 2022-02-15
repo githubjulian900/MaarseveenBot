@@ -13,7 +13,6 @@ module.exports.run = async (bot, message, args) => {
 const { guild } = message.guild
 console.log(guild)
 
-const name  = guild.name
 const  owner = guild.owner
 const  region = guild.region
 const  membercount = guild.membercount
@@ -25,7 +24,7 @@ console.log(name, region, membercount)
 
 const embed = new MessageEmbed()
 
-.setTitle(`Server info Voor ${name}`)
+.setTitle(`Server info Voor Maarseveen`)
 .setThumbnail(icon)
 .addfield("test", `regio`)
 

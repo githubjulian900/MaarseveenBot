@@ -14,11 +14,20 @@ const { guild } = message
 // console.log(guild)
 
 
-const { name, region, MemberCount, } = guild
-
-console.log(name, region, MemberCount, guild)
+const { name, region, MemberCount, AfkTimeout, owner } = guild
+const icon = guild.iconURL()
+console.log(name, region, MemberCount, guild, AfkTimeout, owner)
 
 message.channel.send(` ${message.author.tag} We zijn bezig met deze commands graag niet uitvoeren onze logs spammen namelijk vol Gr, Julian!`)
+
+
+const embed = new MessageEmbed()
+.setTitle(`Server Informatie voor ${name}`)
+.setThumbnail(icon)
+
+
+message.channel.send({embeds: [embed]})
+
 
 }   
 

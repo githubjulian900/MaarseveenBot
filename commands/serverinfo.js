@@ -25,9 +25,10 @@ const embed = new MessageEmbed()
 .addField("Regio", `${region}`)
 .addField("Members", `${membercount}`)
 .addField("Eigenaar", `${owner}`)
+.addField("Naam", `${name}`)
 
 message.channel.send({embeds: [embed]})
-}  
+}   
 
 
 

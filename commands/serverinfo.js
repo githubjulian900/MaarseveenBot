@@ -12,15 +12,19 @@ const client = new Client({
 module.exports.run = async (bot, message, args) => {
 const { guild } = message.guild
 console.log(guild)
+const name = message.member.guild.name
+const  owner = message.member.guild.owner
+const  region = message.member.guild.region
+const  membercount = message.member.guild.membercount
 
-const {name, region, membercount, owner} = guild
+
 const icon = message.guild.iconURL
 
 console.log(name, region, membercount)
 
 const embed = new MessageEmbed()
 
-.setTitle(`Server info Voor ${name}`)
+.setTitle(`Server info Voor Maarseveen`)
 .setThumbnail(icon)
 .addField("Regio", `${region}`)
 .addField("Members", `${membercount}`)

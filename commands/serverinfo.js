@@ -24,6 +24,24 @@ message.channel.send(` ${message.author.tag} We zijn bezig met deze commands gra
 const embed = new MessageEmbed()
 .setTitle(`Server Informatie voor ${name}`)
 .setThumbnail(icon)
+.addFields(
+	{
+		name: 'Regio',
+		value: region,
+	},
+	{
+		name: 'Members',
+		value: MemberCount,
+	},
+	{
+		name: 'Eigenaar',
+		value: owner.user.tag,
+	},
+	{
+		name: 'AFKTime',
+		value: AfkTimeout/60,
+	},
+)
 
 
 message.channel.send({embeds: [embed]})

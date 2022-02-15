@@ -35,7 +35,7 @@ const embed = new MessageEmbed()
 	},
 	{
 		name: 'Eigenaar',
-		value: owner.tag,
+		value: owner.name,
 	},
 	{
 		name: 'AFKTime',

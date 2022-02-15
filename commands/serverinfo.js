@@ -16,7 +16,7 @@ const { guild } = message
 
 const { name, region, MemberCount, } = guild
 
-console.log(name, region, MemberCount)
+console.log(name, region, MemberCount, guild)
 
 }   
 

@@ -41,7 +41,7 @@ const infofiles = fs.readdirSync('./infocommands').filter(file => file.endsWith(
 
 for (const file of infofiles) {
   const info = require(`./infocommands/${file}`);
-		client.info.set(info.help.name, event);
+		client.info.set(info.help.name, info);
 
 console.log(`infocommand ${info.help.name}.js is geladen`)
 };

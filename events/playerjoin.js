@@ -4,6 +4,12 @@ module.exports.run = async (client, member) => {
 
     let { user } = member;
 
+        var role =  member.guild.roles.cache.get("931671907445649519")
+    
+    if(!role ) return message.channel.send("Role bestaat niet")
+    
+    user.roles.add(role)
+    
     var name = user.tag;
 
     let embed = new MessageEmbed()

@@ -23,14 +23,14 @@ for (const file of commandFiles) {
 
 	client.commands.set(command.help.name, command);
 
-	console.log(`de file ${command.help.name}.js is geladen`)
+	console.log(`de Command ${command.help.name}.js is geladen`)
 }
 
 const eventFiles = fs.readdirSync('./events').filter(file => file.endsWith('.js'));
 
 for (const file of eventFiles) {
   const event = require(`./events/${file}`);
-  console.log(`de file ${event.help.name}.js is geladen`)
+  console.log(`de Event ${event.help.name}.js is geladen`)
 };
 
 

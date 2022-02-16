@@ -11,7 +11,7 @@ const client = new Client({
 
 module.exports.run = async (bot, message, args) => {
  const guild = message.guild
-	const owner = message.guild.fetchOwner()    
+	const owner = await message.guild.fetchOwner()    
     let guildDescription = guild.description
     if (!guildDescription) {
       guildDescription = 'None'
@@ -42,7 +42,7 @@ module.exports.run = async (bot, message, args) => {
               },
               {
                 name: 'Owner',
-                value: owner.tag,
+                value: owner.user.tag,
                 inline: true
               },
               {

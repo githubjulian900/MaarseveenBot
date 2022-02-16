@@ -16,7 +16,7 @@ const { guild } = message
 
 const { name, region, MemberCount, AfkTimeout, owner } = guild
 const icon = guild.iconURL()
-console.log(name, region, MemberCount, guild, AfkTimeout, owner)
+console.log(name, region, MemberCount, guild, owner)
 
 message.channel.send(` ${message.author.tag} We zijn bezig met deze commands graag niet uitvoeren onze logs spammen namelijk vol Gr, Julian!`)
 
@@ -28,7 +28,6 @@ const embed = new MessageEmbed()
 .addfield("Regio", `${region}`)
 .addfield("Members", `${MemberCount}`)
 .addfield("Eigenaar", `${owner}`)
-.addfield("AfkTIme", `${AfkTimeout/60}`)
 
 
 message.channel.send({embeds: [embed]})

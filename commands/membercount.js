@@ -18,13 +18,9 @@ module.exports.run = async (bot, message, args) => {
 
     const embed = new MessageEmbed()
     .setTitle('Membercount')
-    .addFields({
-                name: 'Membercount',
-                value: guild.memberCount.toString(),
-                inline: true
-              }
-
-              })
+    .addField(
+                name: 'Membercount', `${guild.memberCount.toString()}`
+    )
 
     message.reply({ embeds: [embed] })
 

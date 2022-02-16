@@ -1,11 +1,11 @@
-const discord = require("discord.js")
+const { Discord } = require("discord.js")
 
 
 module.exports.run = async (bot, message, args) => {
-   
   message.reply("Herstart over 10  sec")
-   sleep(1000);
+  setTimeout(function(){
   message.reply("Herstart")
+}, 10000);
 }
        
         

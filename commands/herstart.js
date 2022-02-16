@@ -4,7 +4,7 @@ const discord = require("discord.js")
 module.exports.run = async (bot, message, args) => {
    
   message.reply("Herstart over 10  sec")
-  await sleep(1000);
+   sleep(1000);
   message.reply("Herstart")
 }
        

@@ -29,11 +29,7 @@ module.exports.run = async (bot, message, args) => {
                 value: guild.id,
                 inline: true
               },
-              {
-                name: 'Description',
-                value: guildDescription,
-                inline: true
-              },
+          
               {
                 name: 'Created at',
                 value: guild.createdAt.toDateString(),
@@ -47,11 +43,6 @@ module.exports.run = async (bot, message, args) => {
               {
                 name: 'Member Count',
                 value: guild.memberCount.toString(),
-                inline: true
-              },
-              {
-                name: 'Member Cap',
-                value: guild.maximumMembers.toString(),
                 inline: true
               },
               {

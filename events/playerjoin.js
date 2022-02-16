@@ -1,6 +1,6 @@
 module.exports.run = async (client, member) => {
     console.log('Member Joined');
-    let channel = client.channels.cache.get('776942211798532106');
+    let channel = client.channels.cache.get('929391404046749696');
 
     let { user } = member;
 

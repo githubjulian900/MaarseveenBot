@@ -30,6 +30,8 @@ const eventFiles = fs.readdirSync('./events').filter(file => file.endsWith('.js'
 
 for (const file of eventFiles) {
   const event = require(`./events/${file}`);
+		client.events.set(event.help.name, event);
+
   console.log(`de Event ${event.help.name}.js is geladen`)
 };
 

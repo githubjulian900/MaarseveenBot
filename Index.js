@@ -15,6 +15,7 @@ require('./dblogin')
 
 client.commands = new Collection();
 client.events = new Collection()
+client.info = new Collection()
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
@@ -36,9 +37,17 @@ for (const file of eventFiles) {
 };
 
 
+const infofiles = fs.readdirSync('./infocommands').filter(file => file.endsWith('.js'));
+
+for (const file of infofiles) {
+  const event = require(`./infocommands/${file}`);
+		client.info.set(info.help.name, event);
+
+console.log(`infocommand ${info.help.name}.js is geladen`)
+};
+
 
 	
-const logchannel = client.guild.channels.cache.get("940231367986401280")
 
 
     
@@ -49,7 +58,6 @@ client.once("ready", () => {
 	console.log(client.user.username, 'is online')
 	client.user.setActivity("To Maarseveen", { type: "WATCHING" })
 
-logchannel.send("TESST")
 
 
 })

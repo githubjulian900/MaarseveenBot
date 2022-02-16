@@ -38,7 +38,7 @@ for (const file of eventFiles) {
 
 
 	
-const logchannel = message.guild.channels.cache.get("940231367986401280")
+const logchannel = client.guild.channels.cache.get("940231367986401280")
 
 
     

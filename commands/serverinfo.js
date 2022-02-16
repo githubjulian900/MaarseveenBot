@@ -19,7 +19,6 @@ module.exports.run = async (bot, message, args) => {
 
     const embed = new MessageEmbed()
     .setTitle('serverinfo')
-    .setDescription(̀`Server Info voor "${guild.name}"`)
     .addFields({
                 name: 'Name',
                 value: guild.name,

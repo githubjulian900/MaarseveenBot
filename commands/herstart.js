@@ -6,6 +6,9 @@ module.exports.run = async (bot, message, args) => {
   setTimeout(function(){
   message.reply("Herstart")
 }, 10000);
+setTimeout(function(){
+  message.reply("De herstart Is (waarschijnlijk) gelukt! De bot is online!")
+}, 60000);
 }
        
         

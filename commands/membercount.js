@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args) => {
                 name: 'Membercount',
                 value: guild.memberCount.toString(),
                 inline: true
-              },
+              }
 
               })
 

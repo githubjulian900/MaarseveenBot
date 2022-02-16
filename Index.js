@@ -38,7 +38,7 @@ for (const file of eventFiles) {
 
 
 	
-
+const logchannel = guild.channels.cache.get("940231367986401280")
 
 
     
@@ -48,6 +48,8 @@ for (const file of eventFiles) {
 client.once("ready", () => {
 	console.log(client.user.username, 'is online')
 	client.user.setActivity("To Maarseveen", { type: "WATCHING" })
+
+logchannel.send("TESST")
 
 
 })

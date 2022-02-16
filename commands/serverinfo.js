@@ -10,7 +10,8 @@ const client = new Client({
 
 
 module.exports.run = async (bot, message, args) => {
-    const owner = message.guild.fetchOwner()    
+ const guild = message.guild
+	const owner = message.guild.fetchOwner()    
     let guildDescription = guild.description
     if (!guildDescription) {
       guildDescription = 'None'

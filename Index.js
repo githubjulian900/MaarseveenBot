@@ -41,7 +41,6 @@ for (const file of eventFiles) {
 
     
  
-    })
 	
 	
 client.once("ready", () => {

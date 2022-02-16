@@ -9,7 +9,7 @@ module.exports.run = async (client, member) => {
     let embed = new MessageEmbed()
     .setTitle('Welcome')
     .setDescription('Have a nice time, ' + name)
-    channel.send({embeds: [embed);
+    channel.send({embeds: [embed];
 
 }
 

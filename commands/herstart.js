@@ -1,7 +1,7 @@
 
 
 module.exports.run = async (bot, message, args) => {
-
+  const discord = require("discord.js")
    
 
 	message.channel.send("Herstart in 10 sec")

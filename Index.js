@@ -14,7 +14,7 @@ require('./dblogin')
 
 
 client.commands = new Collection();
-
+clinet.events = new Collection()
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
@@ -26,6 +26,12 @@ for (const file of commandFiles) {
 	console.log(`de file ${command.help.name}.js is geladen`)
 }
 
+const eventFiles = fs.readdirSync('./events').filter(file => file.endsWith('.js'));
+
+for (const file of eventFiles) {
+  const event = require(`./events/${file}`);
+  console.log(`de file ${event.help.name}.js is geladen`)
+};
 
 
 

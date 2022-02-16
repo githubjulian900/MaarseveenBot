@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args) => {
   }
 
   const embed = new MessageEmbed()
-    .setTitle(`${icon}, ${name}`)
+    .setTitle(`, ${name}`)
     .setThumbnail(icon)
     .addFields({
       name: 'ID',

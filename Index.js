@@ -35,29 +35,12 @@ for (const file of eventFiles) {
 
 
 
-client.on("guildMemberAdd", member => {
 	
 
 
-    var role =  member.guild.roles.cache.get("931671907445649519")
-    
-    if(!role ) return
-    
-    member.roles.add(role)
-    
-    var channelWelkom = member.guild.channels.cache.get('929391404046749696')
-    
-    if(!channelWelkom) return;
-    
-channelWelkom.send(`Member: ${member}`)
 
-    const welkomembed = new MessageEmbed()
-.setColor("RED")
-.setTitle(`Welkom op de server`)
-.setDescription(`We hebben nu ${member.guild.memberCount} Leden`)
-
-
-channelWelkom.send({embeds: [welkomembed]})
+    
+ 
     })
 	
 	

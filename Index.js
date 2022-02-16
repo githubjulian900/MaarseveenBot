@@ -14,7 +14,7 @@ require('./dblogin')
 
 
 client.commands = new Collection();
-clinet.events = new Collection()
+client.events = new Collection()
 
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 

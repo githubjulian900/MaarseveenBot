@@ -10,28 +10,62 @@ const client = new Client({
 
 
 module.exports.run = async (bot, message, args) => {
-const { guild } = message
-// console.log(guild)
+    const owner = message.guild.fetchOwner()    
+    let guildDescription = guild.description
+    if (!guildDescription) {
+      guildDescription = 'None'
+    }
 
+    const embed = new MessageEmbed()
+    .setTitle('serverinfo')
+    .setDescription('Returns information about the server.')
+    .addFields({
+                name: 'Name',
+                value: guild.name,
+                inline: true
+              },
+              {
+                name: 'ID',
+                value: guild.id,
+                inline: true
+              },
+              {
+                name: 'Description',
+                value: guildDescription,
+                inline: true
+              },
+              {
+                name: 'Created at',
+                value: guild.createdAt.toDateString(),
+                inline: true
+              },
+              {
+                name: 'Owner',
+                value: owner.tag,
+                inline: true
+              },
+              {
+                name: 'Member Count',
+                value: guild.memberCount.toString(),
+                inline: true
+              },
+              {
+                name: 'Member Cap',
+                value: guild.maximumMembers.toString(),
+                inline: true
+              },
+              {
+                name: 'Boosts',
+                value: guild.premiumSubscriptionCount.toString(),
+                inline: true
+              },
+              {
+                name: 'Boost Level',
+                value: guild.premiumTier,
+                inline: true
+              })
 
-const { name, region, MemberCount, AfkTimeout, owner } = guild
-const icon = guild.iconURL()
-console.log(name, region, MemberCount, guild, owner)
-
-message.channel.send(` ${message.author.tag} We zijn bezig met deze commands graag niet uitvoeren onze logs spammen namelijk vol Gr, Julian!`)
-
-
-const embed = new MessageEmbed()
-.setTitle(`Server Informatie voor ${name}`)
-.setThumbnail(icon)
-
-.addfield("Regio", `${region}`)
-.addfield("Members", `${MemberCount}`)
-.addfield("Eigenaar", `${owner}`)
-
-
-message.channel.send({embeds: [embed]})
-
+    message.reply({ embeds: [embed] })
 
 }   
 

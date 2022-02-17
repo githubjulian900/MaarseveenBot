@@ -1,3 +1,8 @@
+
+
+
+module.exports.run = async (client, member) => {
+  
 const {Collection} = require('discord.js')
 let privateVoice = new Collection()
 config = require('../config.json');
@@ -14,3 +19,9 @@ module.exports = async (client, oldState, newState)=>{
       privateVoice.set(user.id, channel.id)
   }
     };
+
+}
+
+module.exports.help = {
+name: "voice"
+}

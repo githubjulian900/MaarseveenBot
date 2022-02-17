@@ -2,8 +2,8 @@ const {Collection} = require('discord.js')
 let privateVoice = new Collection()
 config = require('../config.json');
 
-module.exports = async (bot, oldState, newState)=>{
-  const user = await bot.users.fetch(newState.id)
+module.exports = async (client, oldState, newState)=>{
+  const user = await client.users.fetch(newState.id)
   const member = newState.guild.members.fetch(user)
   if(!oldState.channel && newState.channel.id === (config.createChannel)){
     const channel = await newState.guild.channels.create(user.tag,{

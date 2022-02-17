@@ -6,7 +6,6 @@ module.exports.run = async (bot, message, args) => {
 data: new SlashCommandBuilder()
 	.setname("ping")
 	.setDesciption("PONG!")
-	async execute(messge) {
 	message.reply("PONG!")
 	}
 }   

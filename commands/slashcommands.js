@@ -7,7 +7,7 @@ data: new SlashCommandBuilder()
 	.setname("ping")
 	.setDesciption("PONG!")
 	message.reply("PONG!")
-	}
+	
 }   
 
 

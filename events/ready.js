@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
 	
 client.once("ready", () => {
 
-	
+
 	console.log(client.user.username, 'is online')
 	client.user.setActivity("loding", { type: "WATCHING" })
    setTimeout(function(){
@@ -16,7 +16,7 @@ client.once("ready", () => {
 
 )}
 module.exports.help = {
-name: "slash",
+name: "ready",
 Category: "General",
 desciption: "Hallo Command"
 }

@@ -36,15 +36,6 @@ for (const file of eventFiles) {
   console.log(`Event ${event.help.name}.js is geladen`)
 };
 
-
-
-	
-
-
-    
- 
-	
-	
 client.once("ready", () => {
 	console.log(client.user.username, 'is online')
 	client.user.setActivity("To Maarseveen", { type: "WATCHING" })

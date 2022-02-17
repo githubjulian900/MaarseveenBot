@@ -21,7 +21,7 @@ module.exports.run = async (bot, message, args) => {
 
   const embed = new MessageEmbed()
 
-    .setAuthor({ name: `${name}`, iconURL: `${icon}`})
+    .setAuthor({ name: `${name}`, iconURL: `${icon}`  })
     .setThumbnail(icon)
     .addFields({
       name: 'ID',
@@ -30,17 +30,17 @@ module.exports.run = async (bot, message, args) => {
     },
 
       {
-        name: 'Created at',
+        name: 'Gemaakt',
         value: guild.createdAt.toDateString(),
         inline: true
       },
       {
-        name: 'Owner',
+        name: 'Eigenaar',
         value: owner.user.tag,
         inline: true
       },
       {
-        name: 'Member Count',
+        name: 'Members',
         value: guild.memberCount.toString(),
         inline: true
       },

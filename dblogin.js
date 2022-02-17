@@ -1,13 +1,2 @@
-const mongoose = require("mongoose")
-const config = require("./config.json")
-module.exports = (client) => {
-    client.dblogin = async () => {
-mongoose.Promise = global.Promise;
-await mongoose.connect(config.dbtoken, {
-    useFindandModify: false,
-    UseUnifiedTopology: true,
-    useNewUrlParser: true,
-})
-    }
-}
-
+var mongoclient = require('mongdb').mongoclient,format = require('until').format;
+mongoclient.connect('mongodb://0.0.0.0')

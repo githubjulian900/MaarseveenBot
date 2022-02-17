@@ -2,7 +2,7 @@ const { Discord } = require("discord.js")
 
 
 module.exports.run = async (bot, message, args) => {
-  const channel = client.guild.channels.get("943783374462529577")
+  const channel = message.member.guild.channels.get("943783374462529577")
   message.channel.send("Herstart over 10  sec")
   setTimeout(function(){
   message.channel.send("Herstart")

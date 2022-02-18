@@ -1,5 +1,5 @@
 const { Client, Intents, Collection, MessageEmbed } = require("discord.js")
-const config = require("./config.json")
+const config = require("./head/config.json")
 const fs = require("fs");
 
 const client = new Client({
@@ -18,7 +18,7 @@ client.info = new Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 for (const file of commandFiles) {
-	const command = require(`../commands/${file}`);
+	const command = require(`./commands/${file}`);
 
 	client.commands.set(command.help.name, command);
 
@@ -28,7 +28,7 @@ for (const file of commandFiles) {
 const eventFiles = fs.readdirSync('./events').filter(file => file.endsWith('.js'));
 
 for (const file of eventFiles) {
-  const event = require(`../events/${file}`);
+  const event = require(`./events/${file}`);
 		client.events.set(event.help.name, event);
 
   console.log(`Event ${event.help.name}.js is geladen`)

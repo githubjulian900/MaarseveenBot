@@ -3,10 +3,12 @@
     "@discordjs/rest": "^0.3.0",
     "discord-api-types": "^0.26.1",
     "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
     "hastebin": "^0.2.1",
     "mongoose": "^6.2.1",
     "mongopath": "mongodb+srv://Julian:Julian123@maarseveenbot.dce4a.mongodb.net/Data?retryWrites=true&w=majority",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "python": "^0.0.4"
   },
   "scripts": {
     "start": "nodemon"

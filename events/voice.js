@@ -23,5 +23,5 @@ module.exports = async (client, oldState, newState)=>{
 }
 
 module.exports.help = {
-name: "voice"
+  name: "voice"
 }

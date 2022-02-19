@@ -53,6 +53,8 @@ client.on("messageCreate", async message => {
 	var prefix = await Mongoose.get(`Prefix_${message.guild.id}`)
 	if(prefix == null) {
 		prefix: config.prefix
+	} else {
+		prefix = prefix
 	}
 
 	var messagearray = message.content.split(" ");

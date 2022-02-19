@@ -1,7 +1,9 @@
 const { Permissions } = require('discord.js');
+const config  = require('../config.json');
 const mongoose = require("mongoose")
-module.exports.run = async(client, message, args, prefix) => {
-     
+module.exports.run = async(bot, message, args) => {
+    var prefix = config.prefix 
+
         if(!message.content.startsWith(prefix)) return;
         if(!message.member.permissions.has(Permissions.FLAGS.ADMINISTRATOR)) return message.channel.send(`You dont have permission to use this command`)
         const newprefix = args[0]

@@ -1,6 +1,7 @@
 const { Client, Intents, Collection, MessageEmbed } = require("discord.js")
 const config = require("./config.json")
 const fs = require("fs");
+const { Mongoose } = require("mongoose");
 
 const client = new Client({
 	intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES,
@@ -49,7 +50,10 @@ client.once("ready", () => {
 client.on("messageCreate", async message => {
 	if (message.author.bot) return
 
-	var prefix = config.prefix 
+	var prefix = await Mongoose.get(`Prefix_${message.guild.id}`)
+	if(prefix == null) {
+		prefix: config.prefix
+	}
 
 	var messagearray = message.content.split(" ");
 

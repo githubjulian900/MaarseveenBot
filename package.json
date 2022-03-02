@@ -9,14 +9,15 @@
     "mongopath": "mongodb+srv://Julian:Julian123@maarseveenbot.dce4a.mongodb.net/Data?retryWrites=true&w=majority",
     "nodemon": "^2.0.15",
     "python": "^0.0.4",
-    "ts-node": "^10.5.0",
+    "ts-node": "^10.6.0",
     "typescript": "^4.6.2",
     "wokcommands": "^1.5.3"
-  },  
+  },
   "scripts": {
     "start": "nodemon"
   },
   "name": "maarseveenbot",
+  "type": "module",
   "version": "1.0.0",
   "main": "Index.js",
   "repository": {

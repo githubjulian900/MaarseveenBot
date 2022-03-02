@@ -17,7 +17,6 @@
     "start": "nodemon"
   },
   "name": "maarseveenbot",
-  "type": "module",
   "version": "1.0.0",
   "main": "Index.js",
   "repository": {

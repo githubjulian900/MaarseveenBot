@@ -1,5 +1,4 @@
-import discordJS, { Intents } from 'discord.js'
- 
+const DiscordJS, { Intents } = require 'discord.js' 
 const client = new discordJS.Client({
     intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES]
 })

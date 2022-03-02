@@ -1,4 +1,4 @@
-const DiscordJS, {Client, Intents} = require("discord.js")
+const  { DiscordJS, Client, Intents} = require("discord.js")
 
 
 const client = new Client({
